@@ -14,7 +14,7 @@ header{
     gap: 1rem;
 }
 
-product{
+.product{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 1rem;
     border-radius: 1rem;
@@ -38,7 +38,7 @@ product{
     margin: 5px 0;
 }
 
-buton{
+button{
     cursor: pointer;
     font-size: 1.4rem;
     border-radius: 10px;
