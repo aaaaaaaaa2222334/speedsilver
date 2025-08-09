@@ -44,7 +44,7 @@ function deletProductToCart(){
 
 function addProductToCart(id){
     let product=productsArray.find(function(p){
-        return p._id==id;
+        return p.id==id;
     })
     cart.push(product);
     drawCartProducts();
