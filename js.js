@@ -62,7 +62,7 @@ function drawCartProducts(){
     let sum=0;
     cart.forEach(function(p){
         cartProd.innerHTML+=`
-        <p><img src="${p.photo_url}"> ${p.name} |${p.price}pln</p>
+        <p> ${p.name} |${p.price}pln</p>
         <hr>`;
         sum+=p.price;
     });
@@ -86,4 +86,21 @@ function buyAll(){
         sum+=+p.price;
     });
     document.getElementById('price').innerHTML=sum+'PLN';
+}
+
+let orderBlock=document.getElementById('order-block');
+
+
+let modal=document.getElementById('myModal');
+
+let span=document.getElementsByClassName('close')[0];
+
+span.onclick=function(){
+    modal.style.display='none';
+}
+
+window.onclick=function(event){
+    if (event.target == modal){
+        modal.style.display='none';
+    }
 }
