@@ -5,7 +5,7 @@ let profile = document.getElementById('profile');
 let url = 'https://my-json-server.typicode.com/Mark1906/second-new/users';
 
 let userRequest=new XMLHttpRequest();
-userRequest.open('Get,'`${utl}/users/${id}`);
+userRequest.open('Get',`${url}/users/${id}`);
 userRequest.responseType='json'
 userRequest.onload=function(){
     let user = userRequest.response;
