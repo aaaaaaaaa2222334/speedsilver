@@ -1,7 +1,7 @@
 let productsGrid=document.getElementById('products-grid');
 let productsArray=[];
 let xhr =new XMLHttpRequest();
-let url = 'https://pespatron-3881.restdb.io/rest/wasia';
+let url = 'https://pespatron-3881.restdb.io/rest';
 
 xhr.open('GET',url + '/wasia');
 
