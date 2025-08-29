@@ -1,9 +1,14 @@
 let productsGrid=document.getElementById('products-grid');
 let productsArray=[];
 let xhr =new XMLHttpRequest();
-let url = 'https://my-json-server.typicode.com/Mark1906/second-new';
+let url = 'https://pespatron-3881.restdb.io/rest/wasia';
 
-xhr.open('GET',url + '/products');
+xhr.open('GET',url + '/wasia');
+
+xhr.setRequestHeader("content-type", "application/json");
+xhr.setRequestHeader("x-apikey", "68a067b54a80e51e65677186");
+xhr.setRequestHeader("cache-control", "no-cache");
+
 xhr.responseType='json'
 xhr.onload=function(){
     let products=xhr.response;
