@@ -92,6 +92,11 @@ function buyAll(){
     });
     document.getElementById('price').innerHTML=sum+'PLN';
 }
+function deletAll(){
+    cart=[];
+    cartProd.innerHTML='korzyna ochyshchena'
+    localStorage.setItem("cart",'[]');
+}
 
 let orderBlock=document.getElementById('order-block');
 
