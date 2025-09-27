@@ -114,3 +114,29 @@ window.onclick=function(event){
         modal.style.display='none';
     }
 }
+
+document.getElementById('order-form').addEventListener('sibmit', function(e){
+    e.preventDefault();
+    let data=JSON.stringify({
+        "name": e.target['name'].value,
+        "address": e.target['address'].value,
+        "phone": e.target['phone'].value,
+        "post_number": e.target['post_number'].value,
+        "status": "New",
+        "products": localStorage.getItem('cart')
+    });
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", url+'/wasia');
+    xhr.setRequestHeader("content-type", "application/json");
+xhr.setRequestHeader("x-apikey", "68a067b54a80e51e65677186");
+xhr.setRequestHeader("cache-control", "no-cache");
+    xhr.send(data);
+
+    modal.style.display="none";
+    cart=[];
+    cartProd.innerHTML='#';
+    localStorage.setItem("cart", '[');
+
+
+})
