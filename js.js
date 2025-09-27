@@ -127,7 +127,7 @@ document.getElementById('order-form').addEventListener('sibmit', function(e){
     });
 
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", url+'/wasia');
+    xhr.open("POST", url+'/orders');
     xhr.setRequestHeader("content-type", "application/json");
 xhr.setRequestHeader("x-apikey", "68a067b54a80e51e65677186");
 xhr.setRequestHeader("cache-control", "no-cache");
