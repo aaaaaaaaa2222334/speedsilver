@@ -83,7 +83,7 @@ function complete(id){
             alert('Server error. Try again later');
         }
     }
-      xhr.open("POST","https://pespatron-3881.restdb.io/rest/product");
+      xhr.open("PUT","https://pespatron-3881.restdb.io/rest/product");
     xhr.setRequestHeader("content-type", "application/json");
     xhr.setRequestHeader("x-apikey", "68a067b54a80e51e65677186");
     xhr.setRequestHeader("cache-control", "no-cache");
