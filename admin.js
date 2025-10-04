@@ -67,7 +67,7 @@ xhr.onload=function(){
     })
 }
 
-xhr.send()
+xhr.send();
 
 function complete(id){
     var data=JSON.stringify({
