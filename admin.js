@@ -8,7 +8,7 @@ productForm.addEventListener('submit',function(event){
         "price": event.target['price'].value,
         "photo_url": event.target['photo_url'].value
     });
-    let xhr=newXMLHttpREquest();
+    let xhr=new XMLHttpREquest();
     xhr.withCredentials=false;
 
     xhr.onload=function(){
